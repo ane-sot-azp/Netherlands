@@ -6,57 +6,48 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
 </head>
 <body>
     <header>
-        <div class="area"></div><nav class="main-menu">
+        <div class="area"></div>
+        <nav class="main-menu">
             <ul>
                 <li>
                     <a href="inicio.html">
                         <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
-                            Inicio
-                        </span>
+                        <span class="nav-text" data-translate="nav.inicio">Inicio</span>
                     </a>
                 </li>
                 <li>
                     <a href="gastronomia.html">
                         <i class="fa fa-cutlery fa-2x"></i>
-                        <span class="nav-text">
-                            Gastronomía
-                        </span>
+                        <span class="nav-text" data-translate="nav.gastronomia">Gastronomía</span>
                     </a>
                 </li>
                 <li>
                     <a href="lugares.html">
                         <i class="fa fa-map-marker fa-2x"></i>
-                        <span class="nav-text">
-                            Lugares de interés
-                        </span>
+                        <span class="nav-text" data-translate="nav.lugares">Lugares de interés</span>
                     </a>
                 </li>
                 <li>
                     <a href="museos.html">
                         <i class="fa fa-university fa-2x"></i>
-                        <span class="nav-text">
-                            Museos
-                        </span>
+                        <span class="nav-text" data-translate="nav.museos">Museos</span>
                     </a>
                 </li>
                 <li>
                     <a href="deportes.html">
                         <i class="fa fa-futbol-o fa-2x"></i>
-                        <span class="nav-text">
-                            Deportes
-                        </span>
+                        <span class="nav-text" data-translate="nav.deportes">Deportes</span>
                     </a>
                 </li>
                 <li>
                     <a href="configuracion.html">
                         <i class="fa fa-cog fa-2x"></i>
-                        <span class="nav-text">
-                            Configuración
-                        </span>
+                        <span class="nav-text" data-translate="nav.configuracion">Configuración</span>
                     </a>
                 </li>
             </ul>
@@ -64,81 +55,117 @@
             <ul class="logout">
                 <li>
                     <a href="logout.php">
-                          <i class="fa fa-power-off fa-2x"></i>
-                         <span class="nav-text">
-                             Logout
-                         </span>
-                     </a>
-                 </li>   
+                        <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text" data-translate="nav.logout">Logout</span>
+                    </a>
+                </li>   
             </ul>
         </nav>
         <div class="bg-image">
-          <div class="image-wrapper">
-            <h1>LUGARES DE INTERÉS</h1>
-            <p>¡Explora los rincones más fascinantes de los Países Bajos!</p>
-          </div>
-      </div>
+            <div class="image-wrapper">
+                <h1 data-translate="lugares.title">LUGARES DE INTERÉS</h1>
+                <p data-translate="lugares.subtitle">¡Explora los rincones más fascinantes de los Países Bajos!</p>
+            </div>
+        </div>
     </header>
+    
     <main class="content-section">
         <div class="content-wrapper">
             <section data-age-content data-min-age="18" data-max-age="30">
-                <h2>Lugares Trendy y Vida Nocturna</h2>
-                <p>Descubre los lugares más modernos y vibrantes de los Países Bajos, perfectos para los jóvenes aventureros.</p>
+                <h2 data-translate="lugares.section_young.title">Lugares Trendy y Vida Nocturna</h2>
+                <p data-translate="lugares.section_young.description">Descubre los lugares más modernos y vibrantes de los Países Bajos, perfectos para los jóvenes aventureros.</p>
                 <ul>
-                    <li>Distritos creativos de Ámsterdam</li>
-                    <img src="/Netherlands/IMAGES/Lugares/distritos creativos de amsterdam.jpg" alt="Distritos creativos de Amsterdam" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_young.items.creative_districts.title">Distritos creativos de Ámsterdam</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/distritos creativos de amsterdam.jpg" alt="Distritos creativos de Amsterdam" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_young.items.creative_districts.description">Los distritos creativos de Ámsterdam son el epicentro de la cultura juvenil y el arte contemporáneo. El NDSM Wharf, un antiguo astillero transformado en centro cultural, alberga estudios de artistas, cafés alternativos y eventos culturales. El área de Jordaan combina galerías de arte moderno con boutiques independientes, mientras que De Pijp destaca por su ambiente multicultural y mercados callejeros. Estos barrios son conocidos por sus murales urbanos, pop-up stores y espacios de coworking que atraen a creativos de todo el mundo.</p>
+                    </div>
                     <br>
-                    <li>Bares y clubs nocturnos en Rotterdam</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/bares y clubes nocturnos.jpg" alt="Bares y clubes nocturnos" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_young.items.nightlife.title">Bares y clubs nocturnos en Rotterdam</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/bares y clubes nocturnos.jpg" alt="Bares y clubes nocturnos" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_young.items.nightlife.description">Rotterdam es famosa por su vibrante vida nocturna y su escena musical innovadora. El distrito de Witte de Withstraat es el corazón de la vida nocturna, con bares de diseño, clubs underground y venues de música en vivo. El Club Annabel y el Now&Wow son referentes de la música electrónica, mientras que el Bird Jazz Café atrae a los amantes del jazz y el soul. La ciudad también destaca por sus rooftop bars con vistas panorámicas y festivales nocturnos que transforman espacios industriales en venues únicos.</p>
+                    </div>
                     <br>
-                    <li>Festivales al aire libre</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/festivales al aire libre.jpg" alt="Festivales al aire libre" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_young.items.festivals.title">Festivales al aire libre</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/festivales al aire libre.jpg" alt="Festivales al aire libre" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_young.items.festivals.description">Los Países Bajos son reconocidos mundialmente por sus festivales al aire libre. El Amsterdam Dance Event (ADE) transforma la ciudad en un epicentro de la música electrónica, mientras que el Lowlands Festival ofrece una experiencia única de música, arte y cultura en un entorno rural. El North Sea Jazz Festival en Rotterdam atrae a los mejores músicos de jazz del mundo, y el DGTL Festival combina música electrónica con arte y sostenibilidad. Estos eventos destacan por su organización impecable, instalaciones artísticas innovadoras y compromiso con la sostenibilidad.</p>
+                    </div>
                     <br>
-                    <li>Mercados vintage y tiendas de diseño</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/mercados vintaje.jpg" alt="Mercados vintage" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_young.items.vintage_markets.title">Mercados vintage y tiendas de diseño</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/mercados vintaje.jpg" alt="Mercados vintage" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_young.items.vintage_markets.description">Los mercados vintage y las tiendas de diseño holandesas son un paraíso para los amantes de lo retro y lo contemporáneo. El IJ-Hallen en Ámsterdam, el mercado vintage más grande de Europa, ofrece tesoros de segunda mano en un antiguo almacén naval. El mercado Albert Cuyp combina puestos tradicionales con tiendas de diseño emergente. Las Nine Streets de Ámsterdam albergan boutiques vintage cuidadosamente curadas, mientras que el Markthal de Rotterdam fusiona gastronomía con diseño en un edificio arquitectónicamente impresionante.</p>
+                    </div>
                     <br>
                 </ul>
             </section>
 
             <section data-age-content data-min-age="31" data-max-age="50">
-                <h2>Lugares Históricos y Culturales</h2>
-                <p>Explora la rica historia y patrimonio cultural de los Países Bajos a través de sus lugares más emblemáticos.</p>
+                <h2 data-translate="lugares.section_adult.title">Lugares Históricos y Culturales</h2>
+                <p data-translate="lugares.section_adult.description">Explora la rica historia y patrimonio cultural de los Países Bajos a través de sus lugares más emblemáticos.</p>
                 <ul>
-                    <li>Canales históricos de Ámsterdam</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/Canales de amsterdam.jpg" alt="Canales historicos de Amsterdam" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_adult.items.canals.title">Canales históricos de Ámsterdam</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/Canales de amsterdam.jpg" alt="Canales históricos de Amsterdam" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_adult.items.canals.description">Los canales de Ámsterdam, declarados Patrimonio de la Humanidad por la UNESCO, son el corazón histórico de la ciudad. Esta red de vías acuáticas del siglo XVII, conocida como el Grachtengordel, incluye los famosos canales Herengracht, Keizersgracht y Prinsengracht. Las casas históricas que bordean los canales, con sus fachadas distintivas y ganchos de elevación, son testimonio del próspero pasado comercial de la ciudad. Los visitantes pueden explorar los canales en barco, admirar la arquitectura histórica y descubrir los puentes iluminados durante el Festival de la Luz de Ámsterdam.</p>
+                    </div>
                     <br>
-                    <li>Molinos de viento de Kinderdijk</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/molinos de viento de kinderdijk.jpeg" alt="Molinos de viento de kinderdijk" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_adult.items.windmills.title">Molinos de viento de Kinderdijk</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/molinos de viento de kinderdijk.jpeg" alt="Molinos de viento de Kinderdijk" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_adult.items.windmills.description">Los molinos de viento de Kinderdijk, otro sitio Patrimonio de la Humanidad, representan la lucha histórica de los Países Bajos contra el agua. Este conjunto de 19 molinos de viento del siglo XVIII forma el grupo más grande de molinos históricos del país. Los molinos no solo son monumentos históricos, sino que también demuestran la ingeniería hidráulica innovadora que ha permitido a los holandeses vivir bajo el nivel del mar. Los visitantes pueden explorar los molinos, algunos de los cuales siguen funcionando, y aprender sobre la vida de los molineros a través de exhibiciones interactivas.</p>
+                    </div>
                     <br>
-                    <li>Arquitectura moderna de Rotterdam</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/arquitectura moderna de rotterdam.jpg" alt="Arquitectura moderna de Rotterdam" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_adult.items.modern_architecture.title">Arquitectura moderna de Rotterdam</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/arquitectura moderna de rotterdam.jpg" alt="Arquitectura moderna de Rotterdam" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_adult.items.modern_architecture.description">Rotterdam, reconstruida después de la Segunda Guerra Mundial, es un museo al aire libre de arquitectura moderna y diseño urbano innovador. Las Casas Cubo, diseñadas por Piet Blom, son un ejemplo icónico de arquitectura experimental. El Markthal, con su impresionante techo abovedado cubierto de arte, combina un mercado de alimentos con apartamentos de lujo. El puente Erasmus, conocido como "El Cisne", es un símbolo de la innovación arquitectónica de la ciudad. El distrito de rascacielos alberga edificios premiados como la Torre De Rotterdam y el edificio Timmerhuis.</p>
+                    </div>
                     <br>
-                    <li>Pueblos pesqueros tradicionales</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/pueblos pesqueros de holanda.jpeg" alt="Pueblos pequeros de holanda" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_adult.items.fishing_villages.title">Pueblos pesqueros tradicionales</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/pueblos pesqueros de holanda.jpeg" alt="Pueblos pesqueros de Holanda" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_adult.items.fishing_villages.description">Los pueblos pesqueros tradicionales de los Países Bajos ofrecen una visión auténtica de la vida marítima holandesa. Volendam, con sus casas de madera coloridas y su puerto pintoresco, mantiene vivas las tradiciones pesqueras. Marken, antigua isla ahora conectada a tierra firme, es famosa por sus casas elevadas sobre pilotes y su museo al aire libre. Urk, el pueblo pesquero más antiguo del país, conserva su carácter tradicional con calles estrechas y casas históricas. Estos pueblos son conocidos por su gastronomía marinera, trajes tradicionales y festivales folclóricos.</p>
+                    </div>
                     <br>
                 </ul>
             </section>
 
             <section data-age-content data-min-age="51">
-                <h2>Lugares Tranquilos y Naturales</h2>
-                <p>Disfruta de la serenidad y belleza natural de los Países Bajos en lugares perfectos para un ritmo más relajado.</p>
+                <h2 data-translate="lugares.section_senior.title">Lugares Tranquilos y Naturales</h2>
+                <p data-translate="lugares.section_senior.description">Disfruta de la serenidad y belleza natural de los Países Bajos en lugares perfectos para un ritmo más relajado.</p>
                 <ul>
-                    <li>Campos de tulipanes en Keukenhof</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/campos de flores de keukenhof.jpg" alt="Campos de flores de keukenhof" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_senior.items.tulip_fields.title">Campos de tulipanes en Keukenhof</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/campos de flores de keukenhof.jpg" alt="Campos de flores de Keukenhof" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_senior.items.tulip_fields.description">Keukenhof, conocido como el Jardín de Europa, es el mayor jardín de flores del mundo. Abierto solo durante ocho semanas en primavera, el parque exhibe más de 7 millones de bulbos en flor, incluyendo 800 variedades de tulipanes. Los jardines están diseñados artísticamente con lagos, fuentes y esculturas. Los visitantes pueden disfrutar de exposiciones especiales en los pabellones, aprender sobre la historia del cultivo de tulipanes y participar en eventos temáticos. Los campos de tulipanes circundantes crean un espectacular paisaje multicolor que atrae a visitantes de todo el mundo.</p>
+                    </div>
                     <br>
-                    <li>Parques nacionales y reservas naturales</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/campos y parques nacionales de holanda.jpg" alt="Parques nacionales y reservas naturales" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_senior.items.national_parks.title">Parques nacionales y reservas naturales</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/campos y parques nacionales de holanda.jpg" alt="Parques nacionales y reservas naturales" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_senior.items.national_parks.description">Los Países Bajos cuentan con 21 parques nacionales que preservan diversos ecosistemas. El Parque Nacional De Hoge Veluwe es el más grande y combina bosques, dunas y brezales con un museo de arte. El Parque Nacional Oosterschelde protege el delta más grande de Europa, ideal para observar aves y focas. El Parque Nacional Dunas de Texel ofrece paisajes dunares únicos y una rica biodiversidad. Estos espacios naturales cuentan con centros de visitantes, senderos señalizados y puntos de observación de la naturaleza.</p>
+                    </div>
                     <br>
-                    <li>Pueblos pintorescos de Giethoorn</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/pueblos pintorescos de gierhoorn.jpg" alt="Pueblos pintorescos de Gierhoorn" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_senior.items.giethoorn.title">Pueblos pintorescos de Giethoorn</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/pueblos pintorescos de gierhoorn.jpg" alt="Pueblos pintorescos de Giethoorn" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_senior.items.giethoorn.description">Giethoorn, conocida como la 'Venecia de los Países Bajos', es un pueblo idílico donde los canales sustituyen a las calles. Las casas tradicionales con techos de paja están conectadas por más de 170 pequeños puentes de madera. Los visitantes pueden explorar el pueblo en botes eléctricos silenciosos o en tradicionales punters. El pueblo mantiene su encanto rural con jardines bien cuidados, pequeños museos y restaurantes acogedores. La ausencia de tráfico motorizado crea una atmósfera tranquila y relajante.</p>
+                    </div>
                     <br>
-                    <li>Jardines botánicos históricos</li> 
-                    <img src="/Netherlands/IMAGES/Lugares/jardines botanicos historicos de holanda.jpg" alt="Jardines botanicos historicos" height="400" width="400"/>
+                    <li class="lista" data-translate="lugares.section_senior.items.botanical_gardens.title">Jardines botánicos históricos</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Lugares/jardines botanicos historicos de holanda.jpg" alt="Jardines botánicos históricos" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="lugares.section_senior.items.botanical_gardens.description">Los jardines botánicos históricos de los Países Bajos son oasis de tranquilidad y conocimiento botánico. El Hortus Botanicus de Leiden, fundado en 1590, es uno de los jardines botánicos más antiguos del mundo y alberga especies raras y colecciones históricas. El Jardín Botánico de Ámsterdam destaca por su invernadero de mariposas y plantas medicinales. Estos jardines combinan valor histórico con investigación científica actual, ofreciendo visitas guiadas, talleres de jardinería y exposiciones temporales sobre botánica y sostenibilidad.</p>
+                    </div>
                     <br>
                 </ul>
             </section>
         </div>
     </main>
+
     <script src="js/session.js"></script>
     <script src="js/sidebar.js"></script>
 </body>

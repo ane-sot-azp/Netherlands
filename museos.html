@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
 </head>
 <body>
     <header>
@@ -14,7 +16,7 @@
                 <li>
                     <a href="inicio.html">
                         <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.inicio">
                             Inicio
                         </span>
                     </a>
@@ -22,7 +24,7 @@
                 <li>
                     <a href="gastronomia.html">
                         <i class="fa fa-cutlery fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.gastronomia">
                             Gastronomía
                         </span>
                     </a>
@@ -30,7 +32,7 @@
                 <li>
                     <a href="lugares.html">
                         <i class="fa fa-map-marker fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.lugares">
                             Lugares de interés
                         </span>
                     </a>
@@ -38,7 +40,7 @@
                 <li>
                     <a href="museos.html">
                         <i class="fa fa-university fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.museos">
                             Museos
                         </span>
                     </a>
@@ -46,7 +48,7 @@
                 <li>
                     <a href="deportes.html">
                         <i class="fa fa-futbol-o fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.deportes">
                             Deportes
                         </span>
                     </a>
@@ -54,7 +56,7 @@
                 <li>
                     <a href="configuracion.html">
                         <i class="fa fa-cog fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.configuracion">
                             Configuración
                         </span>
                     </a>
@@ -65,7 +67,7 @@
                 <li>
                     <a href="logout.php">
                           <i class="fa fa-power-off fa-2x"></i>
-                         <span class="nav-text">
+                         <span class="nav-text" data-translate="nav.logout">
                              Logout
                          </span>
                      </a>
@@ -74,66 +76,102 @@
         </nav>
         <div class="bg-image">
           <div class="image-wrapper">
-            <h1>MUSEOS</h1>
-            <p>¡Descubre el arte y la cultura de los Países Bajos!</p>
+            <h1 data-translate="museos.title">MUSEOS</h1>
+            <p data-translate="museos.subtitle">¡Descubre el arte y la cultura de los Países Bajos!</p>
           </div>
       </div>
     </header>
     <main class="content-section">
-        <div class="content-wrapper">
+        <div class="content-wrapper contenido">
             <section data-age-content data-min-age="18" data-max-age="30">
-                <h2>Arte Contemporáneo e Interactivo</h2>
-                <p>Explora los museos más innovadores y modernos de los Países Bajos, con exposiciones interactivas y arte contemporáneo.</p>
+                <h2 data-translate="museos.section_young.title">Arte Contemporáneo e Interactivo</h2>
+                <p data-translate="museos.section_young.description">Explora los museos más innovadores y modernos de los Países Bajos, con exposiciones interactivas y arte contemporáneo.</p>
                 <ul>
-                    <li>Museo Nemo: ciencia y tecnología interactiva</li>
-                    <img src="/Netherlands/IMAGES/Museos/museo nemo.jpg" alt="Museo Nemo" height="400" width="400"/>
+                    <li class="lista" data-translate="museos.section_young.items.nemo.title">Museo Nemo: ciencia y tecnología interactiva</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/museo nemo.jpg" alt="Museo Nemo" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="museos.section_young.items.nemo.description">El NEMO Science Museum es un impresionante edificio en forma de barco verde que domina el horizonte de Ámsterdam. Este museo interactivo de ciencia y tecnología ofrece cinco pisos de exposiciones prácticas, experimentos y demostraciones que exploran fenómenos científicos y tecnológicos. Los visitantes pueden generar electricidad, experimentar con reacciones químicas, aprender sobre el ADN y explorar la sostenibilidad. El tejado del museo, accesible al público, ofrece vistas panorámicas de la ciudad y cuenta con una plaza pública con exposiciones al aire libre.</p>
+                    </div>
                     <br>
-                    <li>Moco Museum: arte contemporáneo y street art</li>
-                    <img src="/Netherlands/IMAGES/Museos/moco museum.jpg" alt="Moco museum" height="400" width="400"/>
+                    <li class="lista" data-translate="museos.section_young.items.moco.title">Moco Museum: arte contemporáneo y street art</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/moco museum.jpg" alt="Moco museum" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="museos.section_young.items.moco.description">Ubicado en una villa histórica en la Plaza de los Museos, el Moco Museum representa la vanguardia del arte contemporáneo y el arte callejero. La colección incluye obras de artistas internacionales como Banksy, Keith Haring y Andy Warhol, junto con instalaciones digitales inmersivas. El museo destaca por su enfoque fresco y accesible al arte contemporáneo, con exposiciones que abordan temas sociales actuales y tendencias artísticas emergentes. Las exposiciones cambian regularmente, ofreciendo nuevas experiencias en cada visita.</p>
+                    </div>
                     <br>
-                    <li>Foam: fotografía contemporánea</li>
-                    <img src="/Netherlands/IMAGES/Museos/foam museum.webp" alt="Foam museum" height="400" width="400"/>
+                    <li class="lista" data-translate="museos.section_young.items.foam.title">Foam: fotografía contemporánea</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/foam museum.webp" alt="Foam museum" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="museos.section_young.items.foam.description">Foam es un museo de fotografía internacional situado en un canal histórico de Ámsterdam. El museo presenta exposiciones innovadoras que abarcan todos los aspectos de la fotografía: desde documentales históricos hasta trabajos experimentales contemporáneos. Foam apoya a fotógrafos emergentes y establecidos, organizando talleres, debates y programas educativos. El museo también publica Foam Magazine, una revista de fotografía internacionalmente aclamada, y mantiene una librería especializada en fotografía.</p>
+                    </div>
                     <br>
-                    <li>Exposiciones multimedia e instalaciones digitales</li>
-                    <img src="/Netherlands/IMAGES/Museos/Institutos para sonidos y vision de holanda.webp" alt="Exposiciones multimedia" height="400" width="400"/>
+                    <li class="lista" data-translate="museos.section_young.items.multimedia.title">Exposiciones multimedia e instalaciones digitales</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/Institutos para sonidos y vision de holanda.webp" alt="Exposiciones multimedia" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="museos.section_young.items.multimedia.description">Los Países Bajos son líderes en arte digital y multimedia, con numerosos espacios dedicados a estas formas de expresión. El Instituto Holandés de Sonido y Visión en Hilversum es un archivo audiovisual y museo interactivo que explora la historia de los medios holandeses. Las instalaciones incluyen experiencias de realidad virtual, proyecciones inmersivas y exhibiciones interactivas que utilizan tecnología de punta. Los visitantes pueden experimentar con diferentes medios, crear sus propios contenidos y explorar el futuro de la comunicación digital.</p>
+                    </div>
                     <br>
                 </ul>
             </section>
 
             <section data-age-content data-min-age="31" data-max-age="50">
-                <h2>Museos Clásicos e Históricos</h2>
-                <p>Descubre las colecciones más importantes y los tesoros artísticos de los Países Bajos.</p>
+                <h2 data-translate="museos.section_adult.title">Museos Clásicos e Históricos</h2>
+                <p data-translate="museos.section_adult.description">Descubre las colecciones más importantes y los tesoros artísticos de los Países Bajos.</p>
                 <ul>
-                    <li>Rijksmuseum: maestros holandeses</li>
-                    <img src="/Netherlands/IMAGES/Museos/rijkdmuseum.jpeg" alt="Rijksmuseum" height="400" width="400"/>
+                    <li class="lista" data-translate="museos.section_adult.items.rijks.title">Rijksmuseum: maestros holandeses</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/rijkdmuseum.jpeg" alt="Rijksmuseum" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="museos.section_adult.items.rijks.description">El Rijksmuseum es el museo nacional de los Países Bajos y uno de los más importantes del mundo. Alberga obras maestras del Siglo de Oro holandés, incluyendo "La Ronda de Noche" de Rembrandt y obras de Vermeer, Frans Hals y Jan Steen. El edificio histórico, diseñado por Pierre Cuypers, es una obra maestra arquitectónica por sí mismo. La colección incluye más de un millón de objetos, desde pinturas y esculturas hasta fotografías y artes decorativas, que abarcan 800 años de historia del arte y la cultura holandesa.</p>
+                    </div>
                     <br>
-                    <li>Van Gogh Museum: obra completa del artista</li>
-                    <img src="/Netherlands/IMAGES/Museos/van gogh museum.jpg" alt="Museo Van Gogh" height="400" width="400"/>
+                    <li class="lista">Van Gogh Museum: obra completa del artista</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/van gogh museum.jpg" alt="Museo Van Gogh" height="400" width="400"/>
+                        <p class="infoBloque">El Museo Van Gogh alberga la mayor colección de obras de Vincent van Gogh en el mundo, incluyendo pinturas, dibujos y cartas. El museo traza el desarrollo artístico y personal del artista, desde sus primeros años hasta sus últimas obras maestras. La colección incluye obras icónicas como "Los Girasoles", "La habitación" y numerosos autorretratos. El museo también presenta obras de contemporáneos de Van Gogh y artistas que lo influenciaron, ofreciendo un contexto completo de su vida y obra.</p>
+                    </div>
                     <br>
-                    <li>Mauritshuis: arte del Siglo de Oro</li>
-                    <img src="/Netherlands/IMAGES/Museos/mauritshuis museum.jpeg" alt="Museo Mauritshuis" height="400" width="400"/>
+                    <li class="lista">Mauritshuis: arte del Siglo de Oro</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/mauritshuis museum.jpeg" alt="Museo Mauritshuis" height="400" width="400"/>
+                        <p class="infoBloque">El Mauritshuis, ubicado en La Haya, es un museo que alberga una de las mejores colecciones de pintura holandesa y flamenca del Siglo de Oro. El museo está situado en un palacio del siglo XVII y contiene obras maestras como "La joven de la perla" de Vermeer y "La lección de anatomía del Dr. Nicolaes Tulp" de Rembrandt. La intimidad del edificio histórico permite una experiencia única y personal con estas obras maestras mundialmente famosas.</p>
+                    </div>
                     <br>
-                    <li>Museo Nacional de Historia</li>
-                    <img src="/Netherlands/IMAGES/Museos/museo-nacional-de-holanda.jpg" alt="Museo nacional de holanda" height="400" width="400"/>
+                    <li class="lista">Museo Nacional de Historia</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/museo-nacional-de-holanda.jpg" alt="Museo nacional de holanda" height="400" width="400"/>
+                        <p class="infoBloque">El Museo Nacional de Historia de los Países Bajos ofrece un viaje fascinante a través del pasado del país. Las exposiciones combinan objetos históricos, documentos, multimedia y tecnología interactiva para contar la historia de la nación, desde la prehistoria hasta la actualidad. El museo destaca eventos cruciales como la Edad de Oro, las guerras mundiales y los movimientos sociales que han dado forma a la sociedad holandesa moderna. Las exposiciones están diseñadas para ser accesibles y atractivas para visitantes de todas las edades.</p>
+                    </div>
                     <br>
                 </ul>
             </section>
 
             <section data-age-content data-min-age="51">
-                <h2>Museos Especializados y Tradicionales</h2>
-                <p>Visita museos con un ritmo más tranquilo y colecciones especializadas que permiten una apreciación detallada.</p>
+                <h2 data-translate="museos.section_senior.title">Museos Especializados y Tradicionales</h2>
+                <p data-translate="museos.section_senior.description">Visita museos con un ritmo más tranquilo y colecciones especializadas que permiten una apreciación detallada.</p>
                 <ul>
-                    <li>Museo Frans Hals: arte holandés del siglo XVII</li>
-                    <img src="/Netherlands/IMAGES/Museos/frans hals museum.jpg" alt="Museo Frans Hals" height="400" width="400"/>
+                    <li class="lista" data-translate="museos.section_senior.items.frans_hals.title">Museo Frans Hals: arte holandés del siglo XVII</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/frans hals museum.jpg" alt="Museo Frans Hals" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="museos.section_senior.items.frans_hals.description">El Museo Frans Hals en Haarlem está dedicado al arte holandés del siglo XVII, con especial atención a las obras del maestro del retrato Frans Hals. Ubicado en un antiguo asilo de ancianos, el museo alberga una importante colección de pinturas del Siglo de Oro holandés, incluyendo los famosos retratos de grupo de las milicias cívicas de Hals. El museo también presenta obras de otros artistas de Haarlem y exposiciones temporales que exploran diferentes aspectos del arte y la cultura del siglo XVII.</p>
+                    </div>
                     <br>
-                    <li>Museo de Artes Decorativas</li>
-                    <img src="/Netherlands/IMAGES/Museos/Museo de ares decorativas.jpg" alt="Museo de artes decorativas" height="400" width="400"/>
+                    <li class="lista" data-translate="museos.section_senior.items.decorative.title">Museo de Artes Decorativas</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/Museo de ares decorativas.jpg" alt="Museo de artes decorativas" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="museos.section_senior.items.decorative.description">El Museo de Artes Decorativas exhibe una extensa colección de objetos que ilustran la rica historia del diseño y las artes aplicadas holandesas. La colección incluye muebles, cerámica, vidrio, textiles y orfebrería desde la Edad Media hasta la actualidad. El museo destaca especialmente por su colección de Delft azul, porcelana china y diseño holandés del siglo XX. Las exposiciones muestran cómo el diseño holandés ha evolucionado y continúa influyendo en la vida cotidiana.</p>
+                    </div>
                     <br>
-                    <li>Museos de historia local</li>
-                    <img src="/Netherlands/IMAGES/Museos/museos de historia local.jpg" alt="Museo de historia local" height="400" width="400"/>
+                    <li class="lista" data-translate="museos.section_senior.items.local_history.title">Museos de historia local</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/museos de historia local.jpg" alt="Museo de historia local" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="museos.section_senior.items.local_history.description">Los museos de historia local en los Países Bajos ofrecen una visión íntima de la vida y las tradiciones de diferentes regiones del país. Estos museos, a menudo ubicados en edificios históricos, preservan y presentan la historia, el folklore y las costumbres locales. Las colecciones incluyen trajes tradicionales, herramientas antiguas, fotografías históricas y documentos que narran las historias de las comunidades locales. Muchos de estos museos organizan demostraciones de oficios tradicionales y eventos culturales.</p>
+                    </div>
                     <br>
-                    <li>Casas museo históricas</li>
-                    <img src="/Netherlands/IMAGES/Museos/casas museo historicas.jpg" alt="Casas museo historicas" height="400" width="400"/>
+                    <li class="lista" data-translate="museos.section_senior.items.historic_houses.title">Casas museo históricas</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/Museos/casas museo historicas.jpg" alt="Casas museo historicas" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="museos.section_senior.items.historic_houses.description">Las casas museo históricas de los Países Bajos permiten a los visitantes experimentar cómo vivían las diferentes clases sociales en distintas épocas. Estas residencias restauradas, desde mansiones elegantes hasta casas de comerciantes del Siglo de Oro, están amuebladas con piezas de época y objetos cotidianos auténticos. Los guías, a menudo vestidos con trajes de época, ofrecen visitas que brindan una visión fascinante de la vida doméstica histórica holandesa.</p>
+                    </div>
                     <br>
                 </ul>
             </section>

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
 </head>
 <body>
     <div class="main-content">
@@ -16,7 +18,7 @@
                 <li>
                     <a href="inicio.html">
                         <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.inicio">
                             Inicio
                         </span>
                     </a>
@@ -24,7 +26,7 @@
                 <li>
                     <a href="gastronomia.html">
                         <i class="fa fa-cutlery fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.gastronomia">
                             Gastronomía
                         </span>
                     </a>
@@ -32,7 +34,7 @@
                 <li>
                     <a href="lugares.html">
                         <i class="fa fa-map-marker fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.lugares">
                             Lugares de interés
                         </span>
                     </a>
@@ -40,7 +42,7 @@
                 <li>
                     <a href="museos.html">
                         <i class="fa fa-university fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.museos">
                             Museos
                         </span>
                     </a>
@@ -48,7 +50,7 @@
                 <li>
                     <a href="deportes.html">
                         <i class="fa fa-futbol-o fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.deportes">
                             Deportes
                         </span>
                     </a>
@@ -56,7 +58,7 @@
                 <li>
                     <a href="configuracion.html">
                         <i class="fa fa-cog fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.configuracion">
                             Configuración
                         </span>
                     </a>
@@ -67,7 +69,7 @@
                 <li>
                     <a href="logout.php">
                           <i class="fa fa-power-off fa-2x"></i>
-                         <span class="nav-text">
+                         <span class="nav-text" data-translate="nav.logout">
                              Logout
                          </span>
                      </a>
@@ -76,66 +78,102 @@
         </nav>
         <div class="bg-image">
           <div class="image-wrapper">
-            <h1>DEPORTES</h1>
-            <p>¡Conoce la pasión deportiva de los Países Bajos!</p>
+            <h1 data-translate="deportes.title">DEPORTES</h1>
+            <p data-translate="deportes.subtitle">¡Conoce la pasión deportiva de los Países Bajos!</p>
           </div>
       </div>
     </header>
     <main class="content-section">
         <div class="content-wrapper">
             <section data-age-content data-min-age="18" data-max-age="30">
-                <h2>Deportes Extremos y Aventura</h2>
-                <p>¡Descubre la emocionante escena deportiva juvenil de los Países Bajos! Desde el skateboarding en los modernos parques de Ámsterdam hasta el kitesurfing en las playas de Scheveningen, aquí encontrarás deportes llenos de adrenalina.</p>
+                <h2 data-translate="deportes.section_young.title">Deportes Extremos y Aventura</h2>
+                <p data-translate="deportes.section_young.description">¡Descubre la vibrante y diversa escena deportiva juvenil de los Países Bajos! Desde el skateboarding en los modernos parques de Ámsterdam, como el famoso Skatepark Noord, hasta el emocionante kitesurfing en las ventosas playas de Scheveningen y Zandvoort. Los Países Bajos se han convertido en un epicentro de deportes urbanos y extremos, atrayendo a atletas y entusiastas de todo el mundo con sus instalaciones de primera clase y su comunidad deportiva inclusiva.</p>
                 <ul>
-                    <li>Skateparks urbanos y competiciones de BMX</li>
-                    <img src="/Netherlands/IMAGES/deportes/skatepark urbano y bmx.jpg" alt="Skateparks urbanos y competiciones de BMX" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_young.items.skateparks.title">Skateparks urbanos y competiciones de BMX</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/skatepark urbano y bmx.jpg" alt="Skateparks urbanos y competiciones de BMX" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_young.items.skateparks.description">Los Países Bajos albergan algunos de los mejores skateparks de Europa, como el Skatepark Amsterdam Noord, el Pier15 en Breda y el Area51 en Eindhoven. Estos espacios urbanos no solo ofrecen rampas y obstáculos de alta calidad, sino que también son centros culturales donde se celebran competiciones internacionales, talleres y eventos que unen a la comunidad del skateboarding y BMX. Los parques están diseñados por expertos y cuentan con áreas para todos los niveles, desde principiantes hasta profesionales.</p>
+                    </div>
                     <br>
-                    <li>Deportes acuáticos extremos en la costa holandesa</li>
-                    <img src="/Netherlands/IMAGES/deportes/deportes acuaticos.jpg" alt="Deportes acuaticos extremos en la costa holandesa" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_young.items.water_sports.title">Deportes acuáticos extremos en la costa holandesa</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/deportes acuaticos.jpg" alt="Deportes acuaticos extremos en la costa holandesa" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_young.items.water_sports.description">La costa holandesa es un paraíso para los amantes de los deportes acuáticos extremos. Las playas de Scheveningen, Zandvoort y Noordwijk son reconocidas mundialmente por sus condiciones ideales para el kitesurfing y windsurfing, con vientos constantes y olas desafiantes. Estas zonas cuentan con escuelas certificadas, equipamiento de última generación y una vibrante comunidad de deportistas. Durante el verano, se organizan numerosos eventos y competiciones internacionales que atraen a los mejores atletas del mundo.</p>
+                    </div>
                     <br>
-                    <li>Escalada indoor en centros modernos</li>
-                    <img src="/Netherlands/IMAGES/deportes/escalada indoor.jpg" alt="Escalada indoor en cerntros modernos" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_young.items.climbing.title">Escalada indoor en centros modernos</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/escalada indoor.jpg" alt="Escalada indoor en centros modernos" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_young.items.climbing.description">Los centros de escalada indoor holandeses son verdaderos templos del deporte vertical. Instalaciones como Mountain Network Amsterdam y Klimcentrum Bjoeks en Groningen ofrecen paredes de hasta 37 metros de altura, siendo Bjoeks el hogar de Excalibur, la pared de escalada artificial más alta del mundo. Estos centros cuentan con rutas actualizadas regularmente, zonas de boulder, áreas de entrenamiento específico y programas de formación profesional. La comunidad de escalada holandesa es conocida por su espíritu acogedor y su enfoque en la seguridad y el desarrollo técnico.</p>
+                    </div>
                     <br>
-                    <li>Eventos deportivos juveniles y festivales</li>
-                    <img src="/Netherlands/IMAGES/deportes/eventos deportivos juveniles.webp" alt="Eventos juveniles y festivales" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_young.items.events.title">Eventos deportivos juveniles y festivales</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/eventos deportivos juveniles.webp" alt="Eventos juveniles y festivales" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_young.items.events.description">Los Países Bajos son famosos por sus festivales deportivos juveniles que combinan deporte, música y cultura urbana. Eventos como el NASS Festival en Rotterdam y el Urban Sports Week Amsterdam atraen a miles de participantes cada año. Estos festivales incluyen competiciones de skateboarding, BMX, parkour, breaking y deportes urbanos emergentes, además de conciertos, exposiciones de arte urbano y zonas de práctica libre. Son plataformas cruciales para el desarrollo de talentos y la promoción de la cultura deportiva juvenil.</p>
+                    </div>
                     <br>
                 </ul>
             </section>
 
             <section data-age-content data-min-age="31" data-max-age="50">
-                <h2>Deportes Tradicionales y Competitivos</h2>
-                <p>Los Países Bajos tienen una rica tradición deportiva. Descubre los deportes que han hecho famoso al país y las instalaciones de primer nivel donde se practican.</p>
+                <h2 data-translate="deportes.section_adult.title">Deportes Tradicionales y Competitivos</h2>
+                <p data-translate="deportes.section_adult.description">Los Países Bajos poseen una rica y fascinante tradición deportiva que ha dado forma a su identidad cultural. Desde el fútbol total que revolucionó el deporte rey hasta su dominio en deportes como el hockey sobre hierba y el patinaje sobre hielo, el país ha sido cuna de innovaciones y logros deportivos extraordinarios. Descubre los deportes que han hecho famoso al país y las instalaciones de primer nivel donde se forjan los campeones del mañana.</p>
                 <ul>
-                    <li>Fútbol: visita estadios históricos y clubes legendarios</li>
-                    <img src="/Netherlands/IMAGES/deportes/futbol holandes.jpg" alt="Futbol" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_adult.items.football.title">Fútbol: visita estadios históricos y clubes legendarios</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/futbol holandes.jpg" alt="Futbol" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_adult.items.football.description">El fútbol holandés es mundialmente reconocido por el 'Fútbol Total' desarrollado por el Ajax de Ámsterdam en los años 70. El Johan Cruyff Arena, hogar del Ajax, es un estadio ultramoderno con capacidad para 55,000 espectadores y tours que muestran la rica historia del club. El Feyenoord de Rotterdam, con su mítico estadio De Kuip, y el PSV Eindhoven completan el 'gran tres' del fútbol holandés. La selección nacional, conocida como la 'Naranja Mecánica', ha sido tres veces subcampeona mundial y es famosa por su estilo de juego ofensivo y técnico.</p>
+                    </div>
                     <br>
-                    <li>Ciclismo: rutas profesionales y eventos ciclistas</li>
-                    <img src="/Netherlands/IMAGES/deportes/ciclismo.jpeg" alt="Ciclismo (CicloCross)" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_adult.items.cycling.title">Ciclismo: rutas profesionales y eventos ciclistas</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/ciclismo.jpeg" alt="Ciclismo (CicloCross)" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_adult.items.cycling.description">Los Países Bajos son conocidos como el país de las bicicletas, con más de 35,000 km de carriles ciclistas. El ciclocross holandés es una disciplina especialmente popular, con eventos como el Superprestige y el UCI Cyclocross World Cup. Ciudades como Utrecht y Ámsterdam son paraísos para los ciclistas, con infraestructuras innovadoras como el Hovenring, el primer rotonda elevada para bicicletas del mundo. El Tour de Holanda y la Amstel Gold Race son eventos profesionales que atraen a los mejores ciclistas del mundo.</p>
+                    </div>
                     <br>
-                    <li>Hockey sobre hierba: deporte nacional</li>
-                    <img src="/Netherlands/IMAGES/deportes/hockey sobre hierba.jpg" alt="Hockey sobre hierva" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_adult.items.hockey.title">Hockey sobre hierba: deporte nacional</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/hockey sobre hierba.jpg" alt="Hockey sobre hierva" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_adult.items.hockey.description">El hockey sobre hierba es uno de los deportes más exitosos en los Países Bajos. Tanto el equipo masculino como el femenino son potencias mundiales, con múltiples medallas olímpicas y títulos mundiales. El país cuenta con más de 350 clubes y excelentes instalaciones como el Wagener Stadium en Amstelveen, sede de importantes torneos internacionales. La liga holandesa de hockey (Hoofdklasse) es considerada la mejor del mundo, atrayendo a jugadores internacionales y desarrollando talentos locales a través de su sistema de formación juvenil.</p>
+                    </div>
                     <br>
-                    <li>Patinaje sobre hielo: tradición y competición</li>
-                    <img src="/Netherlands/IMAGES/deportes/patinaje sobre hielo.jpg" alt="Patinaje sobre hielo" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_adult.items.ice_skating.title">Patinaje sobre hielo: tradición y competición</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/patinaje sobre hielo.jpg" alt="Patinaje sobre hielo" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_adult.items.ice_skating.description">El patinaje sobre hielo es parte fundamental de la cultura holandesa. El país domina el patinaje de velocidad con numerosos récords mundiales y medallas olímpicas. La legendaria carrera Elfstedentocht, cuando los canales se congelan, cubre 200 km a través de 11 ciudades de Frisia. Instalaciones como el Thialf en Heerenveen, considerado el templo del patinaje de velocidad, acogen competiciones internacionales y ofrecen programas de entrenamiento de élite. En invierno, numerosas pistas al aire libre y cubiertas permiten a todos disfrutar de este deporte nacional.</p>
+                    </div>
                     <br>
                 </ul>
             </section>
 
             <section data-age-content data-min-age="51">
-                <h2>Deportes Recreativos y Bienestar</h2>
-                <p>Disfruta de actividades deportivas más relajadas y centradas en el bienestar, perfectas para mantener un estilo de vida activo y saludable.</p>
+                <h2 data-translate="deportes.section_senior.title">Deportes Recreativos y Bienestar</h2>
+                <p data-translate="deportes.section_senior.description">Los Países Bajos ofrecen una amplia gama de actividades deportivas centradas en el bienestar y la recreación, perfectamente integradas en sus hermosos paisajes naturales y urbanos. Estas actividades combinan el ejercicio suave con la apreciación de la naturaleza y la cultura holandesa, proporcionando una experiencia deportiva relajante y enriquecedora.</p>
                 <ul>
-                    <li>Golf en campos pintorescos</li>
-                    <img src="/Netherlands/IMAGES/deportes/golf.jpg" alt="Golf" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_senior.items.golf.title">Golf en campos pintorescos</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/golf.jpg" alt="Golf" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_senior.items.golf.description">Los Países Bajos cuentan con más de 250 campos de golf, muchos de ellos diseñados por arquitectos de renombre mundial. El Kennemer Golf & Country Club, cerca de Zandvoort, es uno de los más antiguos y prestigiosos, ofreciendo un desafiante recorrido de links junto al Mar del Norte. El The Dutch en Spijk y el Bernardus Golf en Cromvoirt son sedes de torneos internacionales y destacan por su diseño sostenible y su integración con el paisaje natural holandés.</p>
+                    </div>
                     <br>
-                    <li>Paseos en bicicleta por rutas escénicas</li>
-                    <img src="/Netherlands/IMAGES/deportes/Paseos en bicicleta.webp" alt="Paseos en bicicleta" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_senior.items.cycling_routes.title">Paseos en bicicleta por rutas escénicas</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/Paseos en bicicleta.webp" alt="Paseos en bicicleta" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_senior.items.cycling_routes.description">La red de rutas ciclistas recreativas de los Países Bajos es incomparable, con el sistema de puntos de referencia LF (Landelijke Fietsroutes) que conecta todo el país. La ruta del Zuiderzee, que recorre 440 km alrededor del antiguo mar interior, ofrece vistas espectaculares de pueblos históricos y paisajes costeros. El Parque Nacional De Hoge Veluwe combina naturaleza y cultura con sus 40 km de senderos ciclistas y el Museo Kröller-Müller. Las rutas están perfectamente señalizadas y mantenidas, con áreas de descanso y cafeterías pintorescas a lo largo del camino.</p>
+                    </div>
                     <br>
-                    <li>Yoga y pilates en parques históricos</li>
-                    <img src="/Netherlands/IMAGES/deportes/yoga.jpeg" alt="Yoga" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_senior.items.yoga.title">Yoga y pilates en parques históricos</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/yoga.jpeg" alt="Yoga" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_senior.items.yoga.description">Los parques históricos holandeses se han convertido en espacios ideales para la práctica del yoga y pilates. El Vondelpark en Ámsterdam y el Parque Sonsbeek en Arnhem ofrecen clases al aire libre durante los meses de verano. Estudios como Delight Yoga en Ámsterdam y Rotterdam combinan prácticas tradicionales con elementos modernos en edificios históricos restaurados. Los jardines botánicos de Utrecht y Leiden también acogen sesiones especiales de yoga y meditación, combinando el bienestar físico con la belleza natural e histórica.</p>
+                    </div>
                     <br>
-                    <li>Natación en piscinas termales</li>
-                    <img src="/Netherlands/IMAGES/deportes/piscinas termales.jpg" alt="Natacion en piscinas termales" height="400" width="400"/>
+                    <li class="lista" data-translate="deportes.section_senior.items.swimming.title">Natación en piscinas termales</li>
+                    <div class="bloque">
+                        <img class="imagenBloque" src="IMAGES/deportes/piscinas termales.jpg" alt="Natacion en piscinas termales" height="400" width="400"/>
+                        <p class="infoBloque" data-translate="deportes.section_senior.items.swimming.description">Los centros termales holandeses combinan la natación terapéutica con instalaciones de spa de primera clase. Thermen Bussloo, cerca de Apeldoorn, ofrece piscinas termales interiores y exteriores con diferentes temperaturas y propiedades minerales. El Spa Sport Hotel Zuiver en Ámsterdam cuenta con circuitos de aguas termales y programas de hidroterapia personalizados. Estos centros suelen incluir saunas tradicionales holandesas, baños de vapor aromáticos y áreas de relajación con vistas a jardines paisajísticos.</p>
+                    </div>
                     <br>
                 </ul>
             </section>

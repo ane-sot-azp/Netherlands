@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
 </head>
 <body>
     <header>
@@ -14,7 +16,7 @@
                 <li>
                     <a href="inicio.html">
                         <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.inicio">
                             Inicio
                         </span>
                     </a>
@@ -22,7 +24,7 @@
                 <li>
                     <a href="gastronomia.html">
                         <i class="fa fa-cutlery fa-2x"></i>
-                        <span class="nav-text">
+                        <span class="nav-text" data-translate="nav.gastronomia">
                             Gastronomía
                         </span>
                     </a>
@@ -74,82 +76,139 @@
         </nav>
         <div class="bg-image">
           <div class="image-wrapper">
-            <h1>GASTRONOMÍA HOLANDESA</h1>
-            <p>¡Descubre los sabores de los Países Bajos!</p>
+            <h1 data-translate="gastronomia.title">GASTRONOMÍA HOLANDESA</h1>
+            <p data-translate="gastronomia.subtitle">¡Descubre los sabores de los Países Bajos!</p>
           </div>
       </div>
     </header>
     <main class="content-section">
         <div class="content-wrapper">
             <section data-age-content data-min-age="18" data-max-age="30">
-                <h2>Gastronomía Moderna</h2>
-                <p>Explora la vibrante escena gastronómica urbana de los Países Bajos, perfecta para los amantes de la comida innovadora y casual.</p>
+                <h2 data-translate="gastronomia.section_young.title">Gastronomía Moderna</h2>
+                <p data-translate="gastronomia.section_young.description">Explora la vibrante escena gastronómica urbana de los Países Bajos, perfecta para los amantes de la comida innovadora y casual.</p>
                 <ul>
-                    <li>Espuma de stamppot con crumble de rookworst</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Espuma de stamppot con crumble de rookworst.jpg" alt="Espuma de stamppot con crumble de rookworst" height="400" width="400"/>
-                    <br>
-                    <li>Arenque marinado con gel de pepino y perlas de vinagre de manzana</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Arenque marinado con gel de pepino y perlas de vinagre de manzana.jpeg" alt="Arenque marinado con gel de pepino y perlas de vinagre de manzana" height="400" width="400"/>
-                    <br>
-                    <li>Croquetas de queso holandés viejo con alioli de trufa</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Croquetas de queso holandés viejo con alioli de trufa.webp" alt="Croquetas de queso holandés viejo con alioli de trufa" height="400" width="400"/>
-                    <br>
-                    <li>Zanahorias baby al horno con hummus de guisantes y aceite de eneldo</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Zanahorias baby al horno con hummus de guisantes y aceite de eneldo.jpg" alt="Zanahorias baby al horno con hummus de guisantes y aceite de eneldo" height="400" width="400"/>
-                    <br>
-                    <li>Solomillo de ternera Frisona con puré de chirivía y reducción de cerveza trapense</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Solomillo de ternera Frisona con puré de chirivía y reducción de cerveza trapense.jpeg" alt="Solomillo de ternera Frisiona con puré de chirivía y reducción de cerveza transparente" height="400" width="400"/>
-                    <br>
-                    <li>Postre de ruibarbo en texturas con crema de yogur y crumble de speculaas</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Postre de ruibarbo en texturas con crema de yogur y crumble de speculaas.jpg" alt="Postre de ruibarbo en texturas con crema de yogur y crumble de speculaas" height="400" width="400"/>
+                    <li class="lista">Espuma de stamppot con crumble de rookworst
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Espuma de stamppot con crumble de rookworst.jpg" alt="Espuma de stamppot con crumble de rookworst" height="400" width="400"/>
+                            <p class="infoBloque">Deliciosa mezcla de sabores tradicionales con un toque moderno.</p>
+                        </div>
+                    </li>
+                    <li class="lista">Arenque marinado con gel de pepino y perlas de vinagre de manzana
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Arenque marinado con gel de pepino y perlas de vinagre de manzana.jpeg" alt="Arenque marinado con gel de pepino y perlas de vinagre de manzana" height="400" width="400"/>
+                            <p class="infoBloque">Un plato fresco y único de la cocina moderna holandesa.</p>
+                        </div>
+                    </li>
+                    <li class="lista">Croquetas de queso holandés viejo con alioli de trufa
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Croquetas de queso holandés viejo con alioli de trufa.webp" alt="Croquetas de queso holandés viejo con alioli de trufa" height="400" width="400"/>
+                            <p class="infoBloque">Sabor tradicional con un toque gourmet.</p>
+                        </div>
+                    </li>
+                    <li class="lista">Zanahorias baby al horno con hummus de guisantes y aceite de eneldo
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Zanahorias baby al horno con hummus de guisantes y aceite de eneldo.jpg" alt="Zanahorias baby al horno con hummus de guisantes y aceite de eneldo" height="400" width="400"/>
+                            <p class="infoBloque">Una opción saludable y deliciosa para disfrutar.</p>
+                        </div>
+                    </li>
+                    <li class="lista">Solomillo de ternera Frisona con puré de chirivía y reducción de cerveza trapense
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Solomillo de ternera Frisona con puré de chirivía y reducción de cerveza trapense.jpeg" alt="Solomillo de ternera Frisiona con puré de chirivía y reducción de cerveza transparente" height="400" width="400"/>
+                            <p class="infoBloque">Un plato principal digno de los mejores chefs.</p>
+                        </div>
+                    </li>
+                    <li class="lista">Postre de ruibarbo en texturas con crema de yogur y crumble de speculaas
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Postre de ruibarbo en texturas con crema de yogur y crumble de speculaas.jpg" alt="Postre de ruibarbo en texturas con crema de yogur y crumble de speculaas" height="400" width="400"/>
+                            <p class="infoBloque">Un final dulce y delicioso para cualquier comida.</p>
+                        </div>
+                    </li>
                 </ul>
             </section>
 
             <section data-age-content data-min-age="31" data-max-age="50">
-                <h2>Gastronomía Tradicional y Contemporánea</h2>
-                <p>Descubre la perfecta mezcla entre la cocina tradicional holandesa y las interpretaciones modernas de chefs reconocidos.</p>
+                <h2 data-translate="gastronomia.section_adult.title">Gastronomía Tradicional y Contemporánea</h2>
+                <p data-translate="gastronomia.section_adult.description">Descubre la perfecta mezcla entre la cocina tradicional holandesa y las interpretaciones modernas de chefs reconocidos.</p>
                 <ul>
-                    <li>Stamppot Boerenkool</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Stamppot Boerenkool.webp" alt="Stamppot Boerenkool" height="400" width="400"/>
-                    <br>
-                    <li>Erwtensoep (Snert)</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/erwtensoep.jpg" alt="Erwtensoep" height="400" width="400"/>
-                    <br>
-                    <li>Haring ‘Hollandse Nieuwe’</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/haring.webp" alt="Haring" height="400" width="400"/>
-                    <br>
-                    <li>Rendang de jackfruit o tofu</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Rendang de jackfruit.png" alt="Rendang de jackfruit" height="400" width="400"/>
-                    <br>
-                    <li>Broodje pulled pork con kimchi</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Broodje pulled pork con kimchi.jpg" alt="Broodje pulled pork con kimchi" height="400" width="400"/>
-                    <br>
-                    <li>Salmón curado con gin holandés (jenever)</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/jenever.avif" alt="Salmon curado con gin holandés (jenever)" height="400" width="400"/>
+                    <li class="lista" data-translate="gastronomia.section_adult.dish1.title">Stamppot Boerenkool
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Stamppot Boerenkool.webp" alt="Stamppot Boerenkool" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_adult.dish1.description">Un plato tradicional que celebra los sabores de la tierra.</p>
+                        </div>
+                    </li>
+                    <li class="lista" data-translate="gastronomia.section_adult.dish2.title">Erwtensoep (Snert)
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/erwtensoep.jpg" alt="Erwtensoep" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_adult.dish2.description">Una sopa espesa y reconfortante para los días fríos.</p>
+                        </div>
+                    </li>
+                    <li class="lista" data-translate="gastronomia.section_adult.dish3.title">Haring 'Hollandse Nieuwe'
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/haring.webp" alt="Haring" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_adult.dish3.description">Un plato clásico de la gastronomía holandesa.</p>
+                        </div>
+                    </li>
+                    <li class="lista" data-translate="gastronomia.section_adult.dish4.title">Rendang de jackfruit o tofu
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Rendang de jackfruit.png" alt="Rendang de jackfruit" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_adult.dish4.description">Un platillo exótico con influencias indonesias.</p>
+                        </div>
+                    </li>
+                    <li class="lista" data-translate="gastronomia.section_adult.dish5.title">Broodje pulled pork con kimchi
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Broodje pulled pork con kimchi.jpg" alt="Broodje pulled pork con kimchi" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_adult.dish5.description">Una combinación deliciosa de sabores ahumados y fermentados.</p>
+                        </div>
+                    </li>
+                    <li class="lista" data-translate="gastronomia.section_adult.dish6.title">Salmón curado con gin holandés (jenever)
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/jenever.avif" alt="Salmon curado con gin holandés (jenever)" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_adult.dish6.description">Un plato con un toque de la tradición local.</p>
+                        </div>
+                    </li>
                 </ul>
             </section>
 
             <section data-age-content data-min-age="51">
-                <h2>Gastronomía Auténtica y Saludable</h2>
-                <p>Disfruta de la auténtica cocina holandesa con un enfoque en ingredientes locales y opciones saludables.</p>
+                <h2 data-translate="gastronomia.section_senior.title">Gastronomía Auténtica y Saludable</h2>
+                <p data-translate="gastronomia.section_senior.description">Disfruta de la auténtica cocina holandesa con un enfoque en ingredientes locales y opciones saludables.</p>
                 <ul>
-                    <li>lichte erwtensoep</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/lichte erwtensoep.webp" alt="lichte erwtensoepl" height="400" width="400"/>
-                    <br>
-                    <li>Ensalada de arenque con remolacha y manzana</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Ensalada de arenque con remolacha y manzana.avif" alt="Ensalada de arenque con remolacha y manzana" height="400" width="400"/>
-                    <br>
-                    <li>Sopa de calabaza con semillas de hinojo y pan integral</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Sopa de calabaza con semillas de hinojo y pan integral.jpg" alt="Sopa de calabaza con semillas de hinojo y pan integral" height="400" width="400"/>
-                    <br>
-                    <li>Buddha bowl holandés</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Buddha bowl holandés.jpg" alt="Buddha bowl holandés" height="400" width="400"/>
-                    <br>
-                    <li>Ensalada de lentejas con queso de cabra y nueces</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Ensalada de lentejas con queso de cabra y nueces.png" alt="Ensalada de lentejas con queso de cabra y nueces" height="400" width="400"/>
-                    <br>
-                    <li>Hutspot con aceite de oliva y tofu marinado</li>
-                    <img src="/Netherlands/IMAGES/Gastronomia/Hutspot con aceite de oliva y tofu marinado.jpeg" alt="Hutspot con aceite de oliva y tofu marinado" height="400" width="400"/>
+                    <li class="lista" data-translate="gastronomia.section_senior.dish1.title">lichte erwtensoep
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/lichte erwtensoep.webp" alt="lichte erwtensoepl" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_senior.dish1.description">Sopa ligera perfecta para los amantes de la cocina sana.</p>
+                        </div>
+                    </li>
+                    <li class="lista" data-translate="gastronomia.section_senior.dish2.title">Ensalada de arenque con remolacha y manzana
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Ensalada de arenque con remolacha y manzana.avif" alt="Ensalada de arenque con remolacha y manzana" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_senior.dish2.description">Fresca y perfecta para una comida ligera.</p>
+                        </div>
+                    </li>
+                    <li class="lista" data-translate="gastronomia.section_senior.dish3.title">Sopa de calabaza con semillas de hinojo y pan integral
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Sopa de calabaza con semillas de hinojo y pan integral.jpg" alt="Sopa de calabaza con semillas de hinojo y pan integral" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_senior.dish3.description">Una opción saludable y reconfortante para cualquier día.</p>
+                        </div>
+                    </li>
+                    <li class="lista" data-translate="gastronomia.section_senior.dish4.title">Buddha bowl holandés
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Buddha bowl holandés.jpg" alt="Buddha bowl holandés" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_senior.dish4.description">Perfecto para una comida llena de nutrientes.</p>
+                        </div>
+                    </li>
+                    <li class="lista" data-translate="gastronomia.section_senior.dish5.title">Ensalada de lentejas con queso de cabra y nueces
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Ensalada de lentejas con queso de cabra y nueces.png" alt="Ensalada de lentejas con queso de cabra y nueces" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_senior.dish5.description">Un plato delicioso y lleno de sabor.</p>
+                        </div>
+                    </li>
+                    <li class="lista" data-translate="gastronomia.section_senior.dish6.title">Hutspot con aceite de oliva y tofu marinado
+                        <div class="bloque">
+                            <img class="imagenBloque" src="IMAGES/Gastronomia/Hutspot con aceite de oliva y tofu marinado.jpeg" alt="Hutspot con aceite de oliva y tofu marinado" height="400" width="400"/>
+                            <p class="infoBloque" data-translate="gastronomia.section_senior.dish6.description">Una deliciosa opción vegetariana para disfrutar.</p>
+                        </div>
+                    </li>
                 </ul>
             </section>
         </div>
