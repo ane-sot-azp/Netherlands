@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración - Países Bajos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="inicio.html">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="configuracion.html" class="active">
+                    <i class="fa fa-cog fa-2x"></i>
+                    <span class="nav-text">Configuración</span>
+                </a>
+            </li>
+            <li>
+                <a href="lugares.html">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <span class="nav-text">Lugares</span>
+                </a>
+            </li>
+            <li>
+                <a href="museos.html">
+                    <i class="fa fa-university fa-2x"></i>
+                    <span class="nav-text">Museos</span>
+                </a>
+            </li>
+            <li>
+                <a href="gastronomia.html">
+                    <i class="fa fa-utensils fa-2x"></i>
+                    <span class="nav-text">Gastronomía</span>
+                </a>
+            </li>
+            <li>
+                <a href="deportes.html">
+                    <i class="fa fa-futbol fa-2x"></i>
+                    <span class="nav-text">Deportes</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="logout">
+            <li>
+                <a href="#" id="logout-link">
+                    <i class="fa fa-power-off fa-2x"></i>
+                    <span class="nav-text">Cerrar sesión</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="config-container" style="padding: 20px; max-width: 800px; margin: 40px auto;">
+            <h2 style="color: #ffffff; text-align: center; margin-bottom: 30px;">Configuración de Colores</h2>
+            <div class="theme-selector" style="background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                <h3 style="color: #ffffff; margin-bottom: 15px;">Temas Predefinidos</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+                    <button type="button" class="theme-btn" data-theme="ocean" style="padding: 15px; border: none; border-radius: 5px; cursor: pointer; background: #1a73e8; color: #ffffff; transition: all 0.3s ease;">
+                        Océano
+                        <div style="display: flex; gap: 5px; margin-top: 5px;">
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #1a73e8; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #4285f4; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #8ab4f8; border-radius: 50%;"></span>
+                        </div>
+                    </button>
+                    <button type="button" class="theme-btn" data-theme="sun" style="padding: 15px; border: none; border-radius: 5px; cursor: pointer; background: #ffd700; color: #000000; transition: all 0.3s ease;">
+                        Sol
+                        <div style="display: flex; gap: 5px; margin-top: 5px;">
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #ffd700; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #ffeb3b; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #fff176; border-radius: 50%;"></span>
+                        </div>
+                    </button>
+                    <button type="button" class="theme-btn" data-theme="forest" style="padding: 15px; border: none; border-radius: 5px; cursor: pointer; background: #2e7d32; color: #ffffff; transition: all 0.3s ease;">
+                        Bosque
+                        <div style="display: flex; gap: 5px; margin-top: 5px;">
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #2e7d32; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #4caf50; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #81c784; border-radius: 50%;"></span>
+                        </div>
+                    </button>
+                    <button type="button" class="theme-btn" data-theme="spring" style="padding: 15px; border: none; border-radius: 5px; cursor: pointer; background: #ec407a; color: #ffffff; transition: all 0.3s ease;">
+                        Primavera
+                        <div style="display: flex; gap: 5px; margin-top: 5px;">
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #ec407a; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #f48fb1; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #f8bbd0; border-radius: 50%;"></span>
+                        </div>
+                    </button>
+                    <button type="button" class="theme-btn" data-theme="mystic" style="padding: 15px; border: none; border-radius: 5px; cursor: pointer; background: #7b1fa2; color: #ffffff; transition: all 0.3s ease;">
+                        Místico
+                        <div style="display: flex; gap: 5px; margin-top: 5px;">
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #7b1fa2; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #9c27b0; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #ce93d8; border-radius: 50%;"></span>
+                        </div>
+                    </button>
+                    <button type="button" class="theme-btn" data-theme="sunset" style="padding: 15px; border: none; border-radius: 5px; cursor: pointer; background: #f57c00; color: #ffffff; transition: all 0.3s ease;">
+                        Atardecer
+                        <div style="display: flex; gap: 5px; margin-top: 5px;">
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #f57c00; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #ff9800; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #ffb74d; border-radius: 50%;"></span>
+                        </div>
+                    </button>
+                    <button type="button" class="theme-btn" data-theme="ruby" style="padding: 15px; border: none; border-radius: 5px; cursor: pointer; background: #d32f2f; color: #ffffff; transition: all 0.3s ease;">
+                        Rubí
+                        <div style="display: flex; gap: 5px; margin-top: 5px;">
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #d32f2f; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #f44336; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #e57373; border-radius: 50%;"></span>
+                        </div>
+                    </button>
+                    <button type="button" class="theme-btn" data-theme="tropical" style="padding: 15px; border: none; border-radius: 5px; cursor: pointer; background: #00bcd4; color: #ffffff; transition: all 0.3s ease;">
+                        Tropical
+                        <div style="display: flex; gap: 5px; margin-top: 5px;">
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #00bcd4; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #26c6da; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #80deea; border-radius: 50%;"></span>
+                        </div>
+                    </button>
+                    <button type="button" class="theme-btn" data-theme="rainbow" style="padding: 15px; border: none; border-radius: 8px; cursor: pointer; background: linear-gradient(90deg, #fbb1bd, #fdf0c2, #bae1ff); color: #1c1c1c; transition: all 0.3s ease;">
+                        Pastel
+                        <div style="display: flex; gap: 5px; margin-top: 5px;">
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #fbb1bd; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #fdf0c2; border-radius: 50%;"></span>
+                            <span style="display: inline-block; width: 15px; height: 15px; background: #bae1ff; border-radius: 50%;"></span>
+                        </div>
+                    </button>
+                    
+                </div>
+                </div>
+            </div>
+            <form id="colorForm" style="background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div class="form-group">
+                        <label for="background">Color de Fondo:</label>
+                        <input type="color" id="background" name="background" value="#1d1d1d">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Color de Texto:</label>
+                        <input type="color" id="text" name="text" value="#ffffff">
+                    </div>
+                    <div class="form-group">
+                        <label for="sidebar_background">Color de Fondo del Sidebar:</label>
+                        <input type="color" id="sidebar_background" name="sidebar_background" value="#e69501">
+                    </div>
+                    <div class="form-group">
+                        <label for="sidebar_text">Color de Texto del Sidebar:</label>
+                        <input type="color" id="sidebar_text" name="sidebar_text" value="#f3ce89">
+                    </div>
+                    <div class="form-group">
+                        <label for="sidebar_hover">Color de Hover del Sidebar:</label>
+                        <input type="color" id="sidebar_hover" name="sidebar_hover" value="#b16b03">
+                    </div>
+                    <div class="form-group">
+                        <label for="sidebar_hover_text">Color de Texto en Hover del Sidebar:</label>
+                        <input type="color" id="sidebar_hover_text" name="sidebar_hover_text" value="#8f5d00">
+                    </div>
+                    <div class="form-group">
+                        <label for="button_background">Color de Fondo de Botones:</label>
+                        <input type="color" id="button_background" name="button_background" value="#e69501">
+                    </div>
+                    <div class="form-group">
+                        <label for="button_text">Color de Texto de Botones:</label>
+                        <input type="color" id="button_text" name="button_text" value="#ffffff">
+                    </div>
+                </div>
+                <button type="submit" class="login-btn" style="margin-top: 20px;">Guardar Configuración</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/session.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/config.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <colors>
+        <background>#f3e5f5</background>
+        <text>#4a148c</text>
+        <sidebar_background>#8e24aa</sidebar_background>
+        <sidebar_text>#f3e5f5</sidebar_text>
+        <sidebar_hover>#6a1b9a</sidebar_hover>
+        <sidebar_hover_text>#ffffff</sidebar_hover_text>
+        <button_background>#7b1fa2</button_background>
+        <button_text>#f3e5f5</button_text>
+    </colors>
+</config>
